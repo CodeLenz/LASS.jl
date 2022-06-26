@@ -56,7 +56,7 @@ println("Var[f] $VarL obtained with $(Nb[1]) evaluations")
 # where df is the derivative of f w.r.t a deterministic 
 # design variable x
 #
-dfx(z::Vector,x=1.0) = 2*(z[1]-5) + z[1];
+dfx(z::Vector,x=1.0) = -10*(z[1]-5*x) + z[1];
 
 # Lets obtain some reference values. 
 # The derivative of the expected value E[f] is 
