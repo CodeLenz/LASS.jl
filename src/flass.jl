@@ -11,7 +11,6 @@ function Lass(bins::Dict{Int64,NBin_data},f::Function, verbose = false)
     
     # Loop pelos bins para calcular a média, já aproveitando
     # para calcular um dos termos da variância
-    println("Calculando média e desvio com $(length(bins)) bins")
     for b in values(bins)
         
         # centro do bin
