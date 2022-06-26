@@ -1,0 +1,4 @@
+name = "LASS"
+uuid = "0007cf47-3fef-45af-9c21-cdf818bb7c9e"
+authors = ["CodeLenz <eduardobarplenz@gmail.com>"]
+version = "0.1.0"
