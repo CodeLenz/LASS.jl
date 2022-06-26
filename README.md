@@ -5,7 +5,10 @@ Valentini, F., Silva, O.M., Torii, A.J. et al. Local averaged stratified samplin
 
 ```julia
 using LASS
-using QuadGK, Distributions, Statistics
+using  Distributions, Statistics
+
+Lets load QuadGK to evaluate some reference values
+load QuadGK
 
 #
 # Lets define a function of z. The argument must z
