@@ -79,7 +79,7 @@ println()
 println("dVar[f] $dVar - reference")
 println("dVar[f] $dVarL obtained with $(Nb[1]) evaluations")
 ```
-The results for this problem are
+The results for this problem are (they can vary a little bit, since z is random)
 
 ```julia
 E[f] 6.000000000000621 - reference
@@ -96,8 +96,8 @@ dE[f] 4.999999999999871 - reference
 dE[f] [4.9985604747676415] obtained with 50 evaluations
 ``` 
 ``` julia
-dVar[f] 5.999999999960915 - reference
-dVar[f] [5.9715595256430305] obtained with 50 evaluations
+dVar[f] -17.99999999988275 - reference
+dVar[f] [-17.8981052338314] obtained with 50 evaluations
 ``` 
 
 
