@@ -7,7 +7,7 @@ Valentini, F., Silva, O.M., Torii, A.J. et al. Local averaged stratified samplin
 using LASS
 using  Distributions, Statistics
 
-Lets load QuadGK to evaluate some reference values
+# Lets load QuadGK to evaluate some reference values
 load QuadGK
 
 #
