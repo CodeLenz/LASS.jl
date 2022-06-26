@@ -161,12 +161,12 @@ end
 #
 # Gera uma lista com os dicionários de bins
 #
-function Generate_bins(dist::Array{T}, Nb::Vector{Int64}) where {T}
+function Generate_bins(dist::Array{T}, Nb::Vector{Int64};verbose=false) where {T}
 
    # Dimensão do problema
    nz, n = size(dist)
 
-   println("Generate_bins  nz=", nz, " n=",n)
+   verbose || println("Generate_bins  nz=", nz, " n=",n)
 
    # Dicionário com os centros e pesos
    sampled = Dict{Int64,NBin_data}()
