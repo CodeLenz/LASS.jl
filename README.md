@@ -8,7 +8,7 @@ using LASS
 using  Distributions, Statistics
 
 # Lets load QuadGK to evaluate some reference values
-load QuadGK
+using QuadGK
 
 #
 # Lets define a function of z. The argument must z
