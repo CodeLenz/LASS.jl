@@ -1,5 +1,6 @@
 # LASS
-Local Averaged Stratified Sampling
+Local Averaged Stratified Sampling [![DOI](https://zenodo.org/badge/507616821.svg)](https://zenodo.org/badge/latestdoi/507616821)
+
 
 Valentini, F., Silva, O.M., Torii, A.J. et al. Local averaged stratified sampling method. J Braz. Soc. Mech. Sci. Eng. 44, 294 (2022). https://doi.org/10.1007/s40430-022-03589-6
 
