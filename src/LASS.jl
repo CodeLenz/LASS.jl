@@ -1,6 +1,7 @@
 module LASS
 
 using Statistics
+using LinearAlgebra
 
 include("bins.jl")
 include("flass.jl")
