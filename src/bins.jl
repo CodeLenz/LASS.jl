@@ -13,6 +13,9 @@ struct NBin_data{T}
    # weight do bin
    w::T
 
+   # Variance
+   s2::T
+
 end
 
 #
@@ -197,8 +200,24 @@ function Generate_bins(dist::Array{T}, Nb::Vector{Int64};verbose=false) where {T
          # Peso
          w = na/n
 
+         # Variação do bin 
+         s2 = 0.0
+         for r in realizacoes
+
+            # Realização
+            z = dist[:,r]
+
+            # Realização menos a média
+            dz = z .- μ
+
+            # faz o produto interno e acumula
+            s2 = s2 + dot(dz,dz)
+
+         end #r   
+         s2 = s2 / max((na-1),1)
+         
          # Registra o bin
-         sampled[contador] = NBin_data(i,μ,w)
+         sampled[contador] = NBin_data(i,μ,w,s2)
          contador += 1
 
       end
